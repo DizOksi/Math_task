@@ -1,10 +1,18 @@
 import math
 
-A = int(input("Введите одно из значений угла А(60,90,120): "))
-c = int(input("Введите значение стороны треугольника: "))
-b = int
-c == b
+A = int(input("Введите одно из значений угла А'(60,90,120): "))
+c = int(input("Введите значение стороны c' треугольника: "))
 h = int(input("Введите значение высоты треугольника: "))
-print("a =", int(h*2))
-print("b =", c)
-
+#a = print("a =", h*2)
+a = int(h*2)
+#print("b =", int(c))
+b = int(c)
+p = ((a + b + c)/2)
+print("a =", a)
+print("b =", int(c))
+print("Полупириметр p =", int(p))
+a = int(a)
+conv_grad = math.radians(A/2)
+R = (p-a) * math.tan(conv_grad)
+S = math.pi * math.pow(R,2)
+print("S =", S)
